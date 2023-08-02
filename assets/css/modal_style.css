@@ -1,0 +1,91 @@
+.ticket-modal {
+    position: fixed;
+    inset: 0; /* same as top, right, left, bottom = 0*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.ticket-modal.open {
+    display: flex;
+}
+
+.ticket-modal .modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);   
+    min-height: 420px;
+    position: relative;
+}
+
+.modal-container .modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.modal-header > i {
+    margin-right: 16px;
+}
+
+.modal-container .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px 14px;
+    color: #fff;
+}
+
+.modal-container .modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0 20px;
+}
+
+.modal-body > * {
+    display: block;
+    width: 100%;
+}
+
+.modal-body .modal-label, #buy-ticket {
+    margin: 16px 0;
+}
+
+.modal-body .modal-input {
+    padding: 8px;
+}
+
+#buy-ticket {
+    padding: 16px;
+    border: none;
+    background-color: #009688;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#buy-ticket:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-footer {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.modal-footer .modal-help a {
+    color: #2196F3;
+}
